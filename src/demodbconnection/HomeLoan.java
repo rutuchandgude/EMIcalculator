@@ -149,9 +149,13 @@ public class HomeLoan extends javax.swing.JFrame {
                 double r = Double.parseDouble(jTextField2.getText());
                 int n = Integer.parseInt(jTextField3.getText());
                 
-                double emi = (p*r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
                 double loanInterest = (p*r)/100;
                 double totalAmt = p+loanInterest;
+                
+               r = r/(12*100);
+               n = n*12;
+                double emi = (p*r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+             
                 
                 jTextField4.setText(Double.toString(emi));
                  jTextField5.setText(Double.toString(loanInterest));
