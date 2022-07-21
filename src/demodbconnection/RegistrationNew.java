@@ -23,7 +23,7 @@ public class RegistrationNew extends javax.swing.JFrame {
 
   
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -131,22 +131,22 @@ public class RegistrationNew extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void unameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unameActionPerformed
+    private void unameActionPerformed(java.awt.event.ActionEvent evt) {                                      
         // TODO add your handling code here:
-    }//GEN-LAST:event_unameActionPerformed
+    }                                     
 
-    private void cpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cpasswordActionPerformed
+    private void cpasswordActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
-    }//GEN-LAST:event_cpasswordActionPerformed
+    }                                         
 
-    private void cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelActionPerformed
+    private void cancelActionPerformed(java.awt.event.ActionEvent evt) {                                       
                this.setVisible(false);
         new RegistrationNew().setVisible(false);
-    }//GEN-LAST:event_cancelActionPerformed
+    }                                      
 
-    private void registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerActionPerformed
+    private void registerActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         
         
@@ -165,7 +165,7 @@ public class RegistrationNew extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane,"Please enter the Password....!");
         }
         else
-        if(pass != cpass)
+        if(!pass.equals(cpass))
         {
             JOptionPane.showMessageDialog(rootPane,"Does not match password....!");
         }
@@ -215,7 +215,7 @@ public class RegistrationNew extends javax.swing.JFrame {
             e.printStackTrace();
         }
        }
-    }//GEN-LAST:event_registerActionPerformed
+    }                                        
 
     /**
      * @param args the command line arguments
@@ -230,7 +230,7 @@ public class RegistrationNew extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton cancel;
     private javax.swing.JPasswordField cpassword;
     private javax.swing.JLabel jLabel1;
@@ -241,5 +241,5 @@ public class RegistrationNew extends javax.swing.JFrame {
     private javax.swing.JPasswordField password;
     private javax.swing.JButton register;
     private javax.swing.JTextField uname;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
